@@ -110,7 +110,10 @@ def enviar_solicitud_amistad(remitente: Usuario, destinatario_username: str) -> 
     Dict[str, str]
         Diccionario indicando si la solicitud fue enviada o ya existía, o si hubo un error.
     """
-    destinatario: Optional[Usuario] = Usuario.cargar_por_username(destinatario_username)
+    try:
+        destinatario: Optional[Usuario] = Usuario.cargar_por_username(destinatario_username)
+    except:
+         destinatario: Optional[UsuarioIA] = UsuarioIA.cargar_por_username(destinatario_username)
     if not destinatario:
         return {"error": "El usuario no existe."}
     
