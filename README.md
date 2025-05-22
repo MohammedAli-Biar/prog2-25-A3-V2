@@ -41,7 +41,7 @@ Ace Chess es una plataforma de ajedrez online desarrollada en Python que permite
 
 1. Clonar el repositorio en un directorio
 ```bash
-git clone <repositorio>
+git clone https://github.com/MohammedAli-Biar/prog2-25-A3-V2.git
 cd <directorio>
 ```
 
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 ```
 3. Ejecutar el servidor Flask
 ```bash
-python api.py
+python main.py
 ```
 
 4. Seguidamente ejecutamos el programa de pruebas
