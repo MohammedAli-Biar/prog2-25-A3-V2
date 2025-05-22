@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity,get_jwt
-from typing import Dict,Optional,Union,Any,List,Tuple
+from typing import Dict,Optional,Union,Any,List
 from datetime import timedelta
 import os
 
